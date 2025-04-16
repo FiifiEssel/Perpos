@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e0e0;
+}
+
+header {
+    background-color: #0c4d39; /* Dark background for header */
+    padding: 10px 20px;
+    height: 200px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out the logo and nav */
+}
+
+.logo img {
+    height: 150px; /* Adjust height as needed */
+    max-width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+    padding: 5px 15px;
+    border: 2px solid #D6D918;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+
+nav ul li:hover {
+    background-color: #D6D918;
+    color: #2c3e50;
+}
+
+main {
+    padding: 20px;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px; /* Adjust as needed */
+    height: auto;
+    border-radius: 10px;
+}
+/* For the new section with three divisions */
+.text-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.text-box {
+    flex: 1;
+    padding: 20px;
+    margin: 0 10px;
+    background-color: #f4f4f4; /* Light background for each box */
+    border-radius: 10px;
+}
+
+.text-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.text-box p {
+    font-size: 1em;
+    color: #333;
+}
+/* For the section with two sides */
+/* General section styling */
+.image-text-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.image-text-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.image-text-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.image-text-item p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* User comment section styling */
+.user-comment-section {
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comment-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.comment-avatar {
+    flex: 0 0 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.comment-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.comment-text {
+    flex: 1;
+    text-align: left;
+}
+
+.comment-text h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.comment-text p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Sustainable Development Section */
+.sustainable-development {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.sustainable-left {
+    flex: 1;
+    padding: 20px;
+}
+
+.sustainable-left h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.sustainable-left p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.sustainable-right {
+    flex: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sdg-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 10px;
+}
+
+.sdg-item {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures content stays inside the border */
+    position: relative;
+}
+
+/* Ensure images fit perfectly */
+.sdg-item img {
+    width: 100%; /* Adjust image size to fit well inside the container */
+    height: 100%;
+    object-fit: contain; /* Scales the image proportionally while keeping it contained */
+    border-radius: 5px; /* Optional: Adds a soft corner effect */
+}
+
+/* Example for hover effect */
+.sdg-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sustainable-development {
+        flex-direction: column;
+    }
+
+    .sdg-grid {
+        grid-template-columns: repeat(3, 1fr); /* Adjust to 3 columns for smaller screens */
+    }
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #2c3e50;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
